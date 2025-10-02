@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    function berekenLeeftijd(geboorteJaar, geboorteMaand, geboorteDag){
+        let now = new Date(2025, 9, 30);
+        let birth = new Date(geboorteJaar, geboorteMaand, geboorteDag); 
+        let miliseconds = now-birth;
+        let seconds = miliseconds / 1000;
+        let minutes = seconds / 60;
+        let hours = minutes / 60;
+        let days = hours / 24;
+        return days;
+    }
+   console.log(berekenLeeftijd(2007, 6 , 7));
+
+    
+
+</script>
+</html>
