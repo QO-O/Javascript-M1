@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas style="border: 1px solid rgb(50, 49, 49)" id="mycanvas" height ="800" width = "1200">
+</body>
+<script src="turtle.js"></script>
+<script defer>
+  const canvas = document.getElementById("mycanvas");
+  const p = new Turtle(canvas);
+
+  p.moveto(400, 350);
+  p.penDown = true;
+
+  function Square(size){
+    for(let i = 0; i < 4; i++){
+      p.forward(size);
+      p.right(90);
+    }
+  }
+
+  for(let i = 0; i < 6; i++){ 
+    p.forward(100); 
+    p.left(90); 
+    p.forward(100);
+    p.left(90);
+
+  }
+	
+
+</script>
+</html>
